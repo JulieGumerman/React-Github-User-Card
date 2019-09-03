@@ -11,10 +11,9 @@ class Card extends React.Component {
                 {this.props.user.map(user => {
                     return (
                         <div>
-                        <img src={user.avatar_url} />
-                        <h3>{user.name}</h3>
-                        <p>Login: {user.login}</p>
-                        <p>Bio: {user.bio}</p>
+                            <img src={user.avatar_url} />
+                            <h3>{user.login}</h3>
+                            <a href={user.html_url} target="_blank">Link to user</a>
                         </div>
                     );
                 })}

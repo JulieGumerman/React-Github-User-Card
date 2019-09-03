@@ -6,12 +6,7 @@ class PersonalCard extends React.Component{
     constructor() {
         super();
         this.state = { 
-            user: [{
-                avatar_url: "",
-                bio: "",
-                name: "",
-                login: ""
-            }]
+            user: [{}]
         } //end this state
     }//end constructor
 
