@@ -37,7 +37,7 @@ class Card extends React.Component {
             <CardWrap>
                 {this.props.user.map(user => {
                     return (
-                        <UserCard>
+                        <UserCard key={user.id}>
                             <UserImg src={user.avatar_url} />
                             <h3>{user.login}</h3>
                             <StyledA href={user.html_url} target="_blank"><i class="fab fa-github-square"></i></StyledA>
