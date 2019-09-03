@@ -22,9 +22,7 @@ class PersonalCard extends React.Component{
     }
     render() {
         return(
-            <div>
                 <Card user={this.state.user} />
-            </div>
         ); //close return
     } //close render
 } //close PersonalCard
